@@ -28,6 +28,12 @@
     .button.secondary:hover {
       background-color: #D1D1D1;
     }
+    .button-group {
+      display: none;
+      gap: 8px;
+      margin-top: 8px;
+      flex-direction: column;
+    }
     #status {
       margin-top: 16px;
       font-size: 14px;
@@ -47,35 +53,45 @@
 </head>
 <body>
   <button id="export" class="button">Export Components</button>
-  <button id="copy" class="button secondary" style="display: none;">Copy to Clipboard</button>
+  <div id="button-group" class="button-group">
+    <button id="copy-json" class="button secondary">Copy as JSON</button>
+    <button id="copy-markdown" class="button secondary">Copy as Markdown</button>
+  </div>
   <div id="status"></div>
   <textarea id="output" readonly></textarea>
 
   <script>
     let componentsData = null;
     const exportBtn = document.getElementById('export');
-    const copyBtn = document.getElementById('copy');
+    const copyJsonBtn = document.getElementById('copy-json');
+    const copyMarkdownBtn = document.getElementById('copy-markdown');
+    const buttonGroup = document.getElementById('button-group');
     const status = document.getElementById('status');
     const output = document.getElementById('output');
 
-    exportBtn.onclick = () => {
-      status.textContent = 'Exporting components...';
-      copyBtn.style.display = 'none';
-      output.style.height = '0';
-      parent.postMessage({ pluginMessage: { type: 'export-components' } }, '*');
-    };
+    function convertToMarkdown(data) {
+      let markdown = '';
+      data.forEach(component => {
+        markdown += `- [ ] **[${component.name}](${component.url})**\n`;
+        if (component.variants && component.variants.length > 0) {
+          component.variants.forEach(variant => {
+            markdown += `    - [ ] [${variant.name}](${variant.url})\n`;
+          });
+        }
+        markdown += '\n . \n\n';
+      });
+      return markdown;
+    }
 
-    copyBtn.onclick = () => {
-      if (!componentsData) return;
-      
+    async function copyToClipboard(text, format) {
       try {
         output.style.height = '1px';
-        output.value = JSON.stringify(componentsData, null, 2);
+        output.value = text;
         output.select();
         document.execCommand('copy');
         output.style.height = '0';
         
-        status.textContent = 'Copied to clipboard!';
+        status.textContent = `Copied as ${format}!`;
         setTimeout(() => {
           status.textContent = `Found ${componentsData.length} component${componentsData.length === 1 ? '' : 's'}`;
         }, 2000);
@@ -84,15 +100,31 @@
         status.textContent = 'Failed to copy. Please press Cmd+C/Ctrl+C to copy manually.';
         output.style.height = '200px';
       }
+    }
+
+    exportBtn.onclick = () => {
+      status.textContent = 'Exporting components...';
+      buttonGroup.style.display = 'none';
+      output.style.height = '0';
+      parent.postMessage({ pluginMessage: { type: 'export-components' } }, '*');
+    };
+
+    copyJsonBtn.onclick = () => {
+      if (!componentsData) return;
+      copyToClipboard(JSON.stringify(componentsData, null, 2), 'JSON');
+    };
+
+    copyMarkdownBtn.onclick = () => {
+      if (!componentsData) return;
+      copyToClipboard(convertToMarkdown(componentsData), 'Markdown');
     };
 
     window.onmessage = (event) => {
       const message = event.data.pluginMessage;
       if (message.type === 'export-result') {
         componentsData = message.components;
-        output.value = JSON.stringify(componentsData, null, 2);
         status.textContent = `Found ${componentsData.length} component${componentsData.length === 1 ? '' : 's'}`;
-        copyBtn.style.display = 'inline-block';
+        buttonGroup.style.display = 'flex';
       }
     };
   </script>

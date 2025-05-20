@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Button Primary",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2012-752",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2004-1363"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2012-753"
+      },
+      {
+        "name": "State=Disabled",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2012-755"
+      }
+    ]
+  },
+  {
+    "name": "Button White",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2253-10882",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2253-10883"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2253-10885"
+      },
+      {
+        "name": "State=Disabled",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2253-10887"
+      }
+    ]
+  },
+  {
+    "name": "Button Secondary",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2012-757",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2005-932"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2012-758"
+      },
+      {
+        "name": "State=Disabled",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2012-761"
+      }
+    ]
+  },
+  {
+    "name": "Button Tertiary",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-3722",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-2924"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-3723"
+      },
+      {
+        "name": "State=Disabled",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-3727"
+      }
+    ]
+  },
+  {
+    "name": "Card Icon Vertical",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2032-4044",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2032-4045"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2032-4505"
+      }
+    ]
+  },
+  {
+    "name": "Navbar",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2004-1221",
+    "variants": [
+      {
+        "name": "Device=Desktop, Transparent=No, Light=Yes",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2004-1217"
+      },
+      {
+        "name": "Device=Desktop, Transparent=Yes, Light=Yes",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2088-3812"
+      },
+      {
+        "name": "Device=Desktop, Transparent=Yes, Light=No",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2088-5078"
+      },
+      {
+        "name": "Device=Mobile, Transparent=No, Light=Yes",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2025-1684"
+      },
+      {
+        "name": "Device=Mobile, Transparent=Yes, Light=Yes",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2088-3961"
+      },
+      {
+        "name": "Device=Mobile, Transparent=Yes, Light=No",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2088-11011"
+      }
+    ]
+  },
+  {
+    "name": "Megamenu / Mobile",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2027-2242"
+  },
+  {
+    "name": "Footer",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-3910",
+    "variants": [
+      {
+        "name": "Device=Desktop",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-3909"
+      },
+      {
+        "name": "Device=Mobile",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2029-3908"
+      }
+    ]
+  },
+  {
+    "name": "Card Image",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-4398",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-3999"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-4399"
+      }
+    ]
+  },
+  {
+    "name": "Nav Link Dropdown",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-6288",
+    "variants": [
+      {
+        "name": "Property 1=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-6285"
+      },
+      {
+        "name": "Property 1=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-6289"
+      },
+      {
+        "name": "Property 1=Disabled",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2041-6293"
+      }
+    ]
+  },
+  {
+    "name": "Card Icon Horizontal",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2097-4455",
+    "variants": [
+      {
+        "name": "Color=Main Cyan, State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2097-4452"
+      },
+      {
+        "name": "Color=Purple, State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2097-5626"
+      },
+      {
+        "name": "Color=Light Cyan, State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2097-5638"
+      },
+      {
+        "name": "Color=Main Cyan, State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2101-12849"
+      },
+      {
+        "name": "Color=Purple, State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2101-12837"
+      },
+      {
+        "name": "Color=Light Cyan, State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2101-12799"
+      }
+    ]
+  },
+  {
+    "name": "Megamenu / Solutions",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2109-18872"
+  },
+  {
+    "name": "Megamenu / Company",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2117-2389"
+  },
+  {
+    "name": "Megamenu / Use cases",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2109-18990"
+  },
+  {
+    "name": "Megamenu / Resources",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2117-2384"
+  },
+  {
+    "name": "Megamenu item",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2109-19274",
+    "variants": [
+      {
+        "name": "State=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2106-18478"
+      },
+      {
+        "name": "State=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2109-19275"
+      }
+    ]
+  },
+  {
+    "name": "Megamenu top item",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2117-621",
+    "variants": [
+      {
+        "name": "Property 1=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2117-620"
+      },
+      {
+        "name": "Property 1=Hover",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2117-622"
+      }
+    ]
+  },
+  {
+    "name": "Map",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2172-7104"
+  },
+  {
+    "name": "Mini card",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2295-12962"
+  },
+  {
+    "name": "Card resources",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2309-18805"
+  },
+  {
+    "name": "Card team",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2301-11896",
+    "variants": [
+      {
+        "name": "Property 1=Default",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2301-11481"
+      },
+      {
+        "name": "Property 1=HOVER",
+        "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2301-11897"
+      }
+    ]
+  },
+  {
+    "name": "Milestone card",
+    "url": "https://www.figma.com/design/49TKBlZNOgSPYMX7nHGBc0/Design-System-Vyntra?node-id=2304-13187"
+  }
+]
