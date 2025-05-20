@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    .button {
+      background-color: #18A0FB;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 4px;
+      min-width: 120px;
+    }
+    .button:hover {
+      background-color: #0D8DE3;
+    }
+    .button.secondary {
+      background-color: #E5E5E5;
+      color: #333;
+    }
+    .button.secondary:hover {
+      background-color: #D1D1D1;
+    }
+    #status {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #333;
+      min-height: 20px;
+    }
+    textarea {
+      width: 90%;
+      height: 0;
+      padding: 0;
+      border: none;
+      margin: 0;
+      resize: none;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="export" class="button">Export Components</button>
+  <button id="copy" class="button secondary" style="display: none;">Copy to Clipboard</button>
+  <div id="status"></div>
+  <textarea id="output" readonly></textarea>
+
+  <script>
+    let componentsData = null;
+    const exportBtn = document.getElementById('export');
+    const copyBtn = document.getElementById('copy');
+    const status = document.getElementById('status');
+    const output = document.getElementById('output');
+
+    exportBtn.onclick = () => {
+      status.textContent = 'Exporting components...';
+      copyBtn.style.display = 'none';
+      output.style.height = '0';
+      parent.postMessage({ pluginMessage: { type: 'export-components' } }, '*');
+    };
+
+    copyBtn.onclick = () => {
+      if (!componentsData) return;
+      
+      try {
+        output.style.height = '1px';
+        output.value = JSON.stringify(componentsData, null, 2);
+        output.select();
+        document.execCommand('copy');
+        output.style.height = '0';
+        
+        status.textContent = 'Copied to clipboard!';
+        setTimeout(() => {
+          status.textContent = `Found ${componentsData.length} component${componentsData.length === 1 ? '' : 's'}`;
+        }, 2000);
+      } catch (err) {
+        console.error(err);
+        status.textContent = 'Failed to copy. Please press Cmd+C/Ctrl+C to copy manually.';
+        output.style.height = '200px';
+      }
+    };
+
+    window.onmessage = (event) => {
+      const message = event.data.pluginMessage;
+      if (message.type === 'export-result') {
+        componentsData = message.components;
+        output.value = JSON.stringify(componentsData, null, 2);
+        status.textContent = `Found ${componentsData.length} component${componentsData.length === 1 ? '' : 's'}`;
+        copyBtn.style.display = 'inline-block';
+      }
+    };
+  </script>
+</body>
+</html> 

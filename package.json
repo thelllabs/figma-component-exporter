@@ -1,0 +1,16 @@
+{
+  "name": "component-exporter",
+  "version": "1.0.0",
+  "description": "Figma plugin to export components with their names and URLs",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.82.0",
+    "typescript": "^5.3.3"
+  }
+} 
